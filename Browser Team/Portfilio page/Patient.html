@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Outline</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+
+.aaa {
+	background-color: lightgrey;
+    width: 100px;
+    border: 2px solid Tomato;
+    height: 100px;
+    margin: 25px;
+}
+
+.aab {
+	background-color: lightgrey;
+    width: 80px;
+    border: 2px solid Tomato;
+    height: 40px;
+    margin: 25px;
+	}
+
+
+.aac {
+	background-color: lightgrey;
+    width: 80px;
+    border: 2px solid Tomato;
+    height: 25px;
+    margin: 25px;
+    right: 800;
+	}
+
+.topnav {
+    overflow: hidden;
+    background-color: #6aa84fff;
+    padding:10px;
+}
+
+.dropbtn {
+    background-color: #008000;
+    color: white;
+    padding: 16px 40px;
+    font-size: 16px;
+    border:none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #b6d7a8ff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border:none;
+    border-radius:30px;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+    border-radius:30px;
+
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Style the content */
+.content {
+    background-color: #ddd;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+}
+
+
+</style>
+</head>
+<body>
+<img  style="position:absolute;Right:25px;top:45px;font-size:12px;color:blue"  src="photo.png" alt='CNO/Director' >
+
+<div class="topnav">
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Schedule</a>
+    <a href="#">Work Log</a>
+    <a href="#">Task Editor</a>
+    <a href="#">Library</a>
+    <a href="#">E-portfolio</a>
+  </div>
+</div>
+</div>
+
+<div class="content">
+  	<div class="aaa">
+	<p>  upload <br> photo </p>
+    </div>
+    <div class="aab">
+	<p> Name </p>
+    </div>
+     <p> Gender: </p>
+     <div class="aac">
+     </div>
+     <p> Nationality: </p>
+     <p> Date of Birth: </p>
+     <p> Contact no.: </p>
+     <p> Emergency contact no.: </p>
+     <p> Address: </p>
+</div>
+<div style="position:absolute;Right:30px;top:15px;">
+<select>
+	<option value="English">English</option>
+    <option value="Chinese">Chinese</option>
+</select>
+</div>
+
+</body>
+
+</html>
