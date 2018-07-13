@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Outline</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.language{position:absolute;Right:30px;top:15px;}
+
+input[type=text], input[type=password] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+}
+
+/* Style the top navigation bar */
+.topnav {
+
+   overflow: hidden;
+   background-color: #6aa84fff;
+   padding:10px;
+   position:relative;
+   height:80px;
+
+}
+
+.dropbtn {
+   background-color: #008000;
+   color: white;
+   padding: 16px 40px;
+   font-size: 16px;
+   border:none;
+   border-radius: 25px;
+   cursor: pointer;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+
+}
+
+.dropdown-content {
+   display: none;
+   position: fixed;
+   background-color: #b6d7a8ff;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 20;
+   border:none;
+   border-radius:30px;
+
+
+}
+
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+
+
+}
+
+.dropdown-content a:hover {
+   background-color: #f1f1f1;
+   border-radius:30px;
+
+}
+
+button:hover{background-color:#32cd32;}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+.dropdown:hover .dropbtn {
+   background-color: #3e8e41;
+}
+
+/* Style the content */
+.content {
+   background-color: #ddd;
+   padding: 10px;
+   height: 100%; /* Should be removed. Only for demonstration */
+}
+button {
+   background-color: #d9ead3ff;
+   border: 2px solid black ;
+   color: black;
+   padding: 4px 32px;
+   text-align: center;
+   display: inline-block;
+   font-size: 16px;
+   margin: 6px 8px;
+   cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+<img  style="position:absolute;Right:25px;top:45px;font-size:12px;color:blue"  src="photo.png" alt='CNO/Director' >
+
+<div class="topnav">
+<div class="dropdown">
+ <button class="dropbtn">Dropdown</button>
+ <div class="dropdown-content">
+   <a href="#">Schedule</a>
+   <a href="#">Work Log</a>
+   <a href="#">Task Editor</a>
+   <a href="#">Library</a>
+   <a href="#">E-portfolio</a>
+ </div>
+</div>
+</div>
+
+<div class="content">
+   <div style="width:460px;height:400px;padding:20px;background-color:#6aa84fff;position:absolute;top:50%;right:50%;margin-right:-250px;margin-top:-90px;">
+   <form action="/action_page.php">
+
+
+
+ <div style="positon:absolute;padding:60px;" class="container">
+   <label for="uname"><b>Username</b></label>
+   <input type="text" placeholder="Enter Username" name="uname" required>
+
+   <label for="psw"><b>Password</b></label>
+   <input type="password" placeholder="Enter Password" name="psw" required>
+
+   <button style="margin-left:100px;"  type="submit">Login</button>
+
+ </div>
+
+ <div class="container" >
+   <button  style="margin-left:310px;"  type="button" class="cancelbtn">Cancel</button>
+ </div>
+</form>
+   <h1 style="position:absolute;top:0px;left:180px;">Sign In</h1>
+   </div>
+
+
+</div>
+<div class="language">
+<select>
+   <option value="English">English</option>
+   <option value="Chinese">Chinese</option>
+</select>
+</div>
+</body>
+
+</html>
